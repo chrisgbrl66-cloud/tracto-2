@@ -1,439 +1,432 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2822
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracto Accesorios Romero | Especialistas en Tractocamiones</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        romeroRed: '#DC2626',
+                        romeroDark: '#0A0A0A',
+                        romeroCard: '#171717',
+                        romeroGray: '#262626',
+                        romeroSilver: '#E5E7EB'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #0A0A0A;
+            color: #E5E7EB;
+        }
+        .metal-gradient {
+            background: linear-gradient(135deg, #2a2a2a 0%, #111111 50%, #1f1f1f 100%);
+            border: 1px solid #333;
+        }
+        .hero-bg {
+            background: linear-gradient(to bottom, rgba(10,10,10,0.85), rgba(10,10,10,0.95)), url('https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-romeroDark text-romeroSilver antialiased selection:bg-romeroRed selection:text-white">
 
-\f0\fs24 \cf0 <!DOCTYPE html>\
-<html lang="es" class="scroll-smooth">\
-<head>\
-    <meta charset="UTF-8">\
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
-    <title>Tracto Accesorios Romero | Especialistas en Tractocamiones</title>\
-    \
-    <!-- Tailwind CSS CDN -->\
-    <script src="https://cdn.tailwindcss.com"></script>\
-    <script>\
-        tailwind.config = \{\
-            theme: \{\
-                extend: \{\
-                    colors: \{\
-                        romeroRed: '#DC2626',\
-                        romeroDark: '#0A0A0A',\
-                        romeroCard: '#171717',\
-                        romeroGray: '#262626',\
-                        romeroSilver: '#E5E7EB'\
-                    \}\
-                \}\
-            \}\
-        \}\
-    </script>\
-    \
-    <!-- FontAwesome Icons -->\
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">\
-    <!-- Google Fonts: Montserrat -->\
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">\
-    \
-    <style>\
-        body \{\
-            font-family: 'Montserrat', sans-serif;\
-            background-color: #0A0A0A;\
-            color: #E5E7EB;\
-        \}\
-        .metal-gradient \{\
-            background: linear-gradient(135deg, #2a2a2a 0%, #111111 50%, #1f1f1f 100%);\
-            border: 1px solid #333;\
-        \}\
-        .hero-bg \{\
-            background: linear-gradient(to bottom, rgba(10,10,10,0.85), rgba(10,10,10,0.95)), url('https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1920&q=80');\
-            background-size: cover;\
-            background-position: center;\
-        \}\
-    </style>\
-</head>\
-<body class="bg-romeroDark text-romeroSilver antialiased selection:bg-romeroRed selection:text-white">\
-\
-    <!-- ========================================== -->\
-    <!-- 1. BARRA DE NAVEGACI\'d3N -->\
-    <!-- ========================================== -->\
-    <header class="fixed top-0 left-0 right-0 z-50 bg-romeroDark/95 backdrop-blur-md border-b border-neutral-800">\
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">\
-            \
-            <!-- LOGO / MARCA -->\
-            <a href="#inicio" class="flex items-center space-x-3 group">\
-                <div class="w-12 h-12 bg-neutral-900 border border-neutral-700 rounded-lg flex items-center justify-center p-1 shadow-md">\
-                    <span class="text-romeroRed font-black text-xl tracking-tighter">TAR</span>\
-                </div>\
-                <div>\
-                    <span class="block font-black text-lg sm:text-xl tracking-wider text-white uppercase group-hover:text-romeroRed transition-colors">Tracto Accesorios</span>\
-                    <span class="block text-xs font-semibold tracking-widest text-romeroRed uppercase">Romero</span>\
-                </div>\
-            </a>\
-\
-            <!-- NAVEGACI\'d3N ESCRITORIO -->\
-            <nav class="hidden md:flex items-center space-x-8 font-semibold text-sm tracking-wide">\
-                <a href="#inicio" class="text-white hover:text-romeroRed transition-colors">Inicio</a>\
-                <a href="#nosotros" class="text-neutral-300 hover:text-romeroRed transition-colors">Nosotros</a>\
-                <a href="#productos" class="text-neutral-300 hover:text-romeroRed transition-colors">Productos</a>\
-                <a href="#sucursales" class="text-neutral-300 hover:text-romeroRed transition-colors">Sucursales</a>\
-                <a href="#contacto" class="text-neutral-300 hover:text-romeroRed transition-colors">Contacto</a>\
-            </nav>\
-\
-            <!-- ACCIONES / REDES -->\
-            <div class="hidden lg:flex items-center space-x-4">\
-                <a href="https://www.facebook.com/Tractoaccesorios.Romero/" target="_blank" class="w-10 h-10 rounded-full bg-neutral-900 border border-neutral-800 flex items-center justify-center text-neutral-300 hover:text-white hover:bg-romeroRed hover:border-romeroRed transition-all">\
-                    <i class="fab fa-facebook-f"></i>\
-                </a>\
-                <a href="https://www.instagram.com/tractoaccesoriosromero/" target="_blank" class="w-10 h-10 rounded-full bg-neutral-900 border border-neutral-800 flex items-center justify-center text-neutral-300 hover:text-white hover:bg-romeroRed hover:border-romeroRed transition-all">\
-                    <i class="fab fa-instagram"></i>\
-                </a>\
-                <a href="#sucursales" class="bg-romeroRed hover:bg-red-700 text-white font-bold px-5 py-2.5 rounded-md text-sm transition-all shadow-lg shadow-red-600/20">\
-                    Cotizar Ahora\
-                </a>\
-            </div>\
-\
-            <!-- BOT\'d3N MEN\'da M\'d3VIL -->\
-            <button id="menu-btn" class="md:hidden text-neutral-300 hover:text-white focus:outline-none">\
-                <i class="fas fa-bars text-2xl"></i>\
-            </button>\
-        </div>\
-\
-        <!-- MEN\'da M\'d3VIL DESPLEGABLE -->\
-        <div id="mobile-menu" class="hidden md:hidden bg-neutral-900 border-b border-neutral-800 px-6 py-6 space-y-4">\
-            <a href="#inicio" class="block text-white font-semibold hover:text-romeroRed">Inicio</a>\
-            <a href="#nosotros" class="block text-neutral-300 font-semibold hover:text-romeroRed">Nosotros</a>\
-            <a href="#productos" class="block text-neutral-300 font-semibold hover:text-romeroRed">Productos</a>\
-            <a href="#sucursales" class="block text-neutral-300 font-semibold hover:text-romeroRed">Sucursales</a>\
-            <a href="#contacto" class="block text-neutral-300 font-semibold hover:text-romeroRed">Contacto</a>\
-        </div>\
-    </header>\
-\
-    <!-- ========================================== -->\
-    <!-- 2. SECCI\'d3N HERO (PRINCIPAL) -->\
-    <!-- ========================================== -->\
-    <section id="inicio" class="hero-bg pt-32 pb-24 md:pt-44 md:pb-36 border-b border-neutral-800">\
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">\
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">\
-                \
-                <!-- TEXTO PRINCIPAL -->\
-                <div class="md:col-span-7 space-y-6">\
-                    <div class="inline-flex items-center space-x-2 bg-neutral-900 border border-neutral-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest text-romeroRed">\
-                        <i class="fas fa-shield-alt"></i> <span>Calidad y Resistencia Garantizada</span>\
-                    </div>\
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white uppercase tracking-tight leading-none">\
-                        Potencia y Estilo para tu <span class="text-romeroRed underline decoration-neutral-700">Tractocami\'f3n</span>\
-                    </h1>\
-                    <p class="text-neutral-400 text-lg max-w-2xl font-normal leading-relaxed">\
-                        Tienda mexicana dedicada a la venta de accesorios y refacciones para tractocamiones y camiones, mejorando la est\'e9tica y seguridad en carretera[cite: 2].\
-                    </p>\
-                    <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 pt-4">\
-                        <a href="#productos" class="w-full sm:w-auto bg-romeroRed hover:bg-red-700 text-white font-bold px-8 py-4 rounded-md text-center uppercase tracking-wider text-sm transition-all shadow-xl shadow-red-600/30">\
-                            Ver Cat\'e1logo de Productos\
-                        </a>\
-                        <a href="#sucursales" class="w-full sm:w-auto bg-neutral-900 hover:bg-neutral-800 text-white border border-neutral-700 font-bold px-8 py-4 rounded-md text-center uppercase tracking-wider text-sm transition-all">\
-                            Nuestras Sucursales\
-                        </a>\
-                    </div>\
-                </div>\
-\
-                <!-- TARJETA DE ESTAD\'cdSTICAS -->\
-                <div class="md:col-span-5">\
-                    <div class="metal-gradient p-8 rounded-2xl shadow-2xl space-y-6 border border-neutral-800 relative overflow-hidden">\
-                        <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-romeroRed/10 rounded-full blur-2xl"></div>\
-                        <h3 class="text-xl font-extrabold text-white uppercase tracking-wide border-b border-neutral-800 pb-4 flex items-center justify-between">\
-                            <span>Trayectoria S\'f3lida</span>\
-                            <i class="fas fa-truck text-romeroRed"></i>\
-                        </h3>\
-                        <div class="grid grid-cols-2 gap-6 pt-2">\
-                            <div>\
-                                <span class="block text-3xl sm:text-4xl font-black text-white">+5,000</span>\
-                                <span class="text-xs uppercase tracking-wider text-neutral-400 font-semibold">Clientes Registrados[cite: 2]</span>\
-                            </div>\
-                            <div>\
-                                <span class="block text-3xl sm:text-4xl font-black text-romeroRed">3</span>\
-                                <span class="text-xs uppercase tracking-wider text-neutral-400 font-semibold">Sucursales en Edomex[cite: 2]</span>\
-                            </div>\
-                            <div>\
-                                <span class="block text-3xl sm:text-4xl font-black text-white">+10</span>\
-                                <span class="text-xs uppercase tracking-wider text-neutral-400 font-semibold">Empleos Formales[cite: 2]</span>\
-                            </div>\
-                            <div>\
-                                <span class="block text-3xl sm:text-4xl font-black text-romeroRed">100%</span>\
-                                <span class="text-xs uppercase tracking-wider text-neutral-400 font-semibold">Especializados[cite: 2]</span>\
-                            </div>\
-                        </div>\
-                        <div class="pt-2">\
-                            <span class="inline-block text-xs text-neutral-400 bg-neutral-900 px-3 py-1.5 rounded border border-neutral-800">\
-                                <i class="fas fa-map-marker-alt text-romeroRed mr-1"></i> Sede Original: Ecatepec de Morelos[cite: 2]\
-                            </span>\
-                        </div>\
-                    </div>\
-                </div>\
-\
-            </div>\
-        </div>\
-    </section>\
-\
-    <!-- ========================================== -->\
-    <!-- 3. SECCI\'d3N SOBRE NOSOTROS -->\
-    <!-- ========================================== -->\
-    <section id="nosotros" class="py-24 bg-neutral-950 border-b border-neutral-800">\
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">\
-            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">\
-                <h2 class="text-xs uppercase tracking-widest text-romeroRed font-extrabold">Qui\'e9nes Somos</h2>\
-                <h3 class="text-3xl sm:text-4xl font-black text-white uppercase tracking-tight">Pasi\'f3n y Experiencia en el Camino</h3>\
-                <p class="text-neutral-400 text-base">\
-                    Tracto Accesorios "Romero" es una empresa mexicana ubicada en el Estado de M\'e9xico[cite: 2], dedicada a ofrecer soluciones de m\'e1xima durabilidad y estilo para camiones de carga pesada.\
-                </p>\
-            </div>\
-\
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">\
-                <!-- Tarjeta 1 -->\
-                <div class="bg-romeroCard border border-neutral-800 p-8 rounded-xl hover:border-romeroRed/50 transition-all group">\
-                    <div class="w-14 h-14 bg-neutral-900 rounded-lg flex items-center justify-center text-romeroRed text-2xl mb-6 group-hover:bg-romeroRed group-hover:text-white transition-all">\
-                        <i class="fas fa-award"></i>\
-                    </div>\
-                    <h4 class="text-xl font-bold text-white mb-3">Fabricantes L\'edderes</h4>\
-                    <p class="text-neutral-400 text-sm leading-relaxed">\
-                        Trabajamos de la mano con los principales fabricantes del sector pesado para garantizar resistencia y calidad superior[cite: 2].\
-                    </p>\
-                </div>\
-\
-                <!-- Tarjeta 2 -->\
-                <div class="bg-romeroCard border border-neutral-800 p-8 rounded-xl hover:border-romeroRed/50 transition-all group">\
-                    <div class="w-14 h-14 bg-neutral-900 rounded-lg flex items-center justify-center text-romeroRed text-2xl mb-6 group-hover:bg-romeroRed group-hover:text-white transition-all">\
-                        <i class="fas fa-shield-alt"></i>\
-                    </div>\
-                    <h4 class="text-xl font-bold text-white mb-3">Seguridad y Est\'e9tica</h4>\
-                    <p class="text-neutral-400 text-sm leading-relaxed">\
-                        Buscamos mejorar de manera integral la seguridad en carretera y la presencia visual imponente de los tractocamiones[cite: 2].\
-                    </p>\
-                </div>\
-\
-                <!-- Tarjeta 3 -->\
-                <div class="bg-romeroCard border border-neutral-800 p-8 rounded-xl hover:border-romeroRed/50 transition-all group">\
-                    <div class="w-14 h-14 bg-neutral-900 rounded-lg flex items-center justify-center text-romeroRed text-2xl mb-6 group-hover:bg-romeroRed group-hover:text-white transition-all">\
-                        <i class="fas fa-handshake"></i>\
-                    </div>\
-                    <h4 class="text-xl font-bold text-white mb-3">Confianza Comprobada</h4>\
-                    <p class="text-neutral-400 text-sm leading-relaxed">\
-                        Una s\'f3lida base de m\'e1s de 5,000 clientes avala nuestro compromiso, atenci\'f3n y servicio en nuestras sucursales[cite: 2].\
-                    </p>\
-                </div>\
-            </div>\
-        </div>\
-    </section>\
-\
-    <!-- ========================================== -->\
-    <!-- 4. SECCI\'d3N PRODUCTOS Y SERVICIOS -->\
-    <!-- ========================================== -->\
-    <section id="productos" class="py-24 bg-romeroDark border-b border-neutral-800">\
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">\
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">\
-                <div class="space-y-4">\
-                    <h2 class="text-xs uppercase tracking-widest text-romeroRed font-extrabold">Cat\'e1logo Especializado</h2>\
-                    <h3 class="text-3xl sm:text-4xl font-black text-white uppercase tracking-tight">Accesorios y Refacciones</h3>\
-                </div>\
-                <p class="text-neutral-400 text-sm max-w-md mt-4 md:mt-0">\
-                    Equipamiento integral para renovar, blindar y personalizar unidades de carga pesada.\
-                </p>\
-            </div>\
-\
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">\
-                <!-- Producto 1 -->\
-                <div class="bg-romeroCard border border-neutral-800 rounded-xl overflow-hidden group hover:border-neutral-600 transition-all">\
-                    <div class="h-48 bg-neutral-900 flex items-center justify-center relative overflow-hidden">\
-                        <i class="fas fa-gem text-5xl text-neutral-700 group-hover:text-romeroRed transition-colors"></i>\
-                        <span class="absolute top-3 left-3 bg-neutral-900/90 text-xs font-bold text-white px-2.5 py-1 rounded border border-neutral-700 uppercase tracking-wider">Cromados</span>\
-                    </div>\
-                    <div class="p-6 space-y-2">\
-                        <h4 class="text-lg font-bold text-white">Cromos y Plafoner\'eda</h4>\
-                        <p class="text-neutral-400 text-xs leading-relaxed">Plafones LED avanzados, molduras y accesorios cromados de gran durabilidad[cite: 2].</p>\
-                    </div>\
-                </div>\
-\
-                <!-- Producto 2 -->\
-                <div class="bg-romeroCard border border-neutral-800 rounded-xl overflow-hidden group hover:border-neutral-600 transition-all">\
-                    <div class="h-48 bg-neutral-900 flex items-center justify-center relative overflow-hidden">\
-                        <i class="fas fa-gas-pump text-5xl text-neutral-700 group-hover:text-romeroRed transition-colors"></i>\
-                        <span class="absolute top-3 left-3 bg-neutral-900/90 text-xs font-bold text-white px-2.5 py-1 rounded border border-neutral-700 uppercase tracking-wider">Estructura</span>\
-                    </div>\
-                    <div class="p-6 space-y-2">\
-                        <h4 class="text-lg font-bold text-white">Tanques y Defensas</h4>\
-                        <p class="text-neutral-400 text-xs leading-relaxed">Tanques de combustible reforzados y defensas robustas para m\'e1xima protecci\'f3n frontal[cite: 2].</p>\
-                    </div>\
-                </div>\
-\
-                <!-- Producto 3 -->\
-                <div class="bg-romeroCard border border-neutral-800 rounded-xl overflow-hidden group hover:border-neutral-600 transition-all">\
-                    <div class="h-48 bg-neutral-900 flex items-center justify-center relative overflow-hidden">\
-                        <i class="fas fa-lightbulb text-5xl text-neutral-700 group-hover:text-romeroRed transition-colors"></i>\
-                        <span class="absolute top-3 left-3 bg-neutral-900/90 text-xs font-bold text-white px-2.5 py-1 rounded border border-neutral-700 uppercase tracking-wider">Iluminaci\'f3n</span>\
-                    </div>\
-                    <div class="p-6 space-y-2">\
-                        <h4 class="text-lg font-bold text-white">Faros y Unidades</h4>\
-                        <p class="text-neutral-400 text-xs leading-relaxed">Faros principales y unidades de iluminaci\'f3n de alta potencia para visibilidad nocturna[cite: 2].</p>\
-                    </div>\
-                </div>\
-\
-                <!-- Producto 4 -->\
-                <div class="bg-romeroCard border border-neutral-800 rounded-xl overflow-hidden group hover:border-neutral-600 transition-all">\
-                    <div class="h-48 bg-neutral-900 flex items-center justify-center relative overflow-hidden">\
-                        <i class="fas fa-bullhorn text-5xl text-neutral-700 group-hover:text-romeroRed transition-colors"></i>\
-                        <span class="absolute top-3 left-3 bg-neutral-900/90 text-xs font-bold text-white px-2.5 py-1 rounded border border-neutral-700 uppercase tracking-wider">Equipamiento</span>\
-                    </div>\
-                    <div class="p-6 space-y-2">\
-                        <h4 class="text-lg font-bold text-white">Loderas, Tapetes y Cornetas</h4>\
-                        <p class="text-neutral-400 text-xs leading-relaxed">Loderas de uso rudo, tapetes protectores, art\'edculos de colisi\'f3n y cornetas de aire[cite: 2].</p>\
-                    </div>\
-                </div>\
-            </div>\
-        </div>\
-    </section>\
-\
-    <!-- ========================================== -->\
-    <!-- 5. SECCI\'d3N SUCURSALES -->\
-    <!-- ========================================== -->\
-    <section id="sucursales" class="py-24 bg-neutral-950 border-b border-neutral-800">\
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">\
-            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">\
-                <h2 class="text-xs uppercase tracking-widest text-romeroRed font-extrabold">Ubicaciones Estrat\'e9gicas</h2>\
-                <h3 class="text-3xl sm:text-4xl font-black text-white uppercase tracking-tight">Nuestras 3 Sucursales</h3>\
-                <p class="text-neutral-400 text-base">\
-                    Operamos tres sucursales en el Estado de M\'e9xico para atenderte de forma personalizada[cite: 2].\
-                </p>\
-            </div>\
-\
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">\
-                \
-                <!-- Sucursal 1: Matriz Ecatepec -->\
-                <div class="bg-romeroCard border border-neutral-800 p-8 rounded-xl space-y-6 flex flex-col justify-between">\
-                    <div class="space-y-4">\
-                        <div class="flex items-center justify-between border-b border-neutral-800 pb-4">\
-                            <h4 class="text-xl font-bold text-white uppercase">Matriz Ecatepec</h4>\
-                            <span class="bg-romeroRed/10 text-romeroRed text-xs font-extrabold px-3 py-1 rounded border border-romeroRed/30">MATRIZ</span>\
-                        </div>\
-                        <p class="text-neutral-300 text-sm flex items-start space-x-3">\
-                            <i class="fas fa-map-marker-alt text-romeroRed mt-1 flex-shrink-0"></i>\
-                            <span>Av. V\'eda Morelos 617-A, km 13.5, Col. Ampliaci\'f3n San Pedro Xalostoc, Ecatepec de Morelos, C.P. 55316[cite: 2]</span>\
-                        </p>\
-                        <p class="text-neutral-300 text-sm flex items-center space-x-3">\
-                            <i class="fas fa-clock text-romeroRed flex-shrink-0"></i>\
-                            <span>Lunes a Viernes 9:00\'9618:00 (Viernes hasta 17:00)<br>S\'e1bado 10:00\'9614:00 (Domingo Cerrado)[cite: 2]</span>\
-                        </p>\
-                    </div>\
-                    <div class="pt-4 border-t border-neutral-800">\
-                        <a href="https://www.facebook.com/Tractoaccesorios.Romero/" target="_blank" class="block w-full bg-neutral-900 hover:bg-romeroRed text-center text-white font-bold py-3 rounded-md text-sm transition-all border border-neutral-700">\
-                            Contactar Matriz\
-                        </a>\
-                    </div>\
-                </div>\
-\
-                <!-- Sucursal 2: Cuautitl\'e1n Izcalli -->\
-                <div class="bg-romeroCard border border-neutral-800 p-8 rounded-xl space-y-6 flex flex-col justify-between">\
-                    <div class="space-y-4">\
-                        <div class="flex items-center justify-between border-b border-neutral-800 pb-4">\
-                            <h4 class="text-xl font-bold text-white uppercase">Cuautitl\'e1n Izcalli</h4>\
-                            <span class="bg-neutral-900 text-neutral-300 text-xs font-extrabold px-3 py-1 rounded border border-neutral-700">SUCURSAL</span>\
-                        </div>\
-                        <p class="text-neutral-300 text-sm flex items-start space-x-3">\
-                            <i class="fas fa-map-marker-alt text-romeroRed mt-1 flex-shrink-0"></i>\
-                            <span>Av. Cuautitl\'e1n - Teoloyucan 1213, Cuautitl\'e1n Izcalli, Estado de M\'e9xico[cite: 2]</span>\
-                        </p>\
-                        <p class="text-neutral-300 text-sm flex items-center space-x-3">\
-                            <i class="fas fa-phone-alt text-romeroRed flex-shrink-0"></i>\
-                            <span class="font-bold text-white">+52 55 6286 4174[cite: 2]</span>\
-                        </p>\
-                    </div>\
-                    <div class="pt-4 border-t border-neutral-800">\
-                        <a href="tel:5562864174" class="block w-full bg-romeroRed hover:bg-red-700 text-center text-white font-bold py-3 rounded-md text-sm transition-all shadow-lg shadow-red-600/20">\
-                            Llamar a Sucursal\
-                        </a>\
-                    </div>\
-                </div>\
-\
-                <!-- Sucursal 3: Tlalnepantla -->\
-                <div class="bg-romeroCard border border-neutral-800 p-8 rounded-xl space-y-6 flex flex-col justify-between">\
-                    <div class="space-y-4">\
-                        <div class="flex items-center justify-between border-b border-neutral-800 pb-4">\
-                            <h4 class="text-xl font-bold text-white uppercase">Tlalnepantla</h4>\
-                            <span class="bg-neutral-900 text-neutral-300 text-xs font-extrabold px-3 py-1 rounded border border-neutral-700">SUCURSAL</span>\
-                        </div>\
-                        <p class="text-neutral-300 text-sm flex items-start space-x-3">\
-                            <i class="fas fa-map-marker-alt text-romeroRed mt-1 flex-shrink-0"></i>\
-                            <span>Tlalnepantla de Baz, Estado de M\'e9xico[cite: 2]</span>\
-                        </p>\
-                        <p class="text-neutral-300 text-sm flex items-center space-x-3">\
-                            <i class="fas fa-info-circle text-romeroRed flex-shrink-0"></i>\
-                            <span>Atenci\'f3n especializada y refacciones para camiones.</span>\
-                        </p>\
-                    </div>\
-                    <div class="pt-4 border-t border-neutral-800">\
-                        <a href="https://www.facebook.com/Tractoaccesorios.Romero/" target="_blank" class="block w-full bg-neutral-900 hover:bg-romeroRed text-center text-white font-bold py-3 rounded-md text-sm transition-all border border-neutral-700">\
-                            Consultar V\'eda Facebook\
-                        </a>\
-                    </div>\
-                </div>\
-\
-            </div>\
-        </div>\
-    </section>\
-\
-    <!-- ========================================== -->\
-    <!-- 6. SECCI\'d3N CONTACTO Y REDES -->\
-    <!-- ========================================== -->\
-    <section id="contacto" class="py-24 bg-romeroDark">\
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">\
-            <div class="max-w-2xl mx-auto space-y-4">\
-                <h2 class="text-xs uppercase tracking-widest text-romeroRed font-extrabold">Con\'e9ctate con Nosotros</h2>\
-                <h3 class="text-3xl sm:text-4xl font-black text-white uppercase tracking-tight">\'bfListo para equipar tu cami\'f3n?</h3>\
-                <p class="text-neutral-400 text-sm">\
-                    S\'edguenos en nuestras redes sociales oficiales para conocer novedades, lanzamientos de nuevos kits y promociones exclusivas.\
-                </p>\
-            </div>\
-\
-            <div class="flex flex-wrap justify-center gap-4 pt-4">\
-                <a href="https://www.facebook.com/Tractoaccesorios.Romero/" target="_blank" class="flex items-center space-x-3 bg-neutral-900 hover:bg-blue-600 text-white border border-neutral-800 px-6 py-3.5 rounded-lg font-bold text-sm transition-all">\
-                    <i class="fab fa-facebook-f text-lg"></i>\
-                    <span>Facebook (+4,8k seguidores)[cite: 2]</span>\
-                </a>\
-                <a href="https://www.instagram.com/tractoaccesoriosromero/" target="_blank" class="flex items-center space-x-3 bg-neutral-900 hover:bg-pink-600 text-white border border-neutral-800 px-6 py-3.5 rounded-lg font-bold text-sm transition-all">\
-                    <i class="fab fa-instagram text-lg"></i>\
-                    <span>Instagram Oficial[cite: 2]</span>\
-                </a>\
-                <a href="https://tractoromero.odoo.com/" target="_blank" class="flex items-center space-x-3 bg-neutral-900 hover:bg-romeroRed text-white border border-neutral-800 px-6 py-3.5 rounded-lg font-bold text-sm transition-all">\
-                    <i class="fas fa-globe text-lg"></i>\
-                    <span>Sitio Web Odoo[cite: 2]</span>\
-                </a>\
-            </div>\
-        </div>\
-    </section>\
-\
-    <!-- ========================================== -->\
-    <!-- 7. FOOTER -->\
-    <!-- ========================================== -->\
-    <footer class="bg-neutral-950 border-t border-neutral-800 py-12">\
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between text-neutral-500 text-xs uppercase tracking-wider space-y-4 md:space-y-0">\
-            <p>&copy; 2026 Tracto Accesorios Romero. Todos los derechos reservados.</p>\
-            <div class="flex space-x-6">\
-                <a href="#inicio" class="hover:text-white transition-colors">T\'e9rminos</a>\
-                <a href="#sucursales" class="hover:text-white transition-colors">Privacidad</a>\
-                <a href="#contacto" class="hover:text-white transition-colors">Soporte</a>\
-            </div>\
-        </div>\
-    </footer>\
-\
-    <!-- ========================================== -->\
-    <!-- SCRIPT PARA MEN\'da M\'d3VIL -->\
-    <!-- ========================================== -->\
-    <script>\
-        const btn = document.getElementById('menu-btn');\
-        const menu = document.getElementById('mobile-menu');\
-\
-        btn.addEventListener('click', () => \{\
-            menu.classList.toggle('hidden');\
-        \});\
-    </script>\
-</body>\
-</html>}
+    <!-- ========================================== -->
+    <!-- 1. BARRA DE NAVEGACIÓN -->
+    <!-- ========================================== -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-romeroDark/95 backdrop-blur-md border-b border-neutral-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- LOGO / MARCA -->
+            <a href="#inicio" class="flex items-center space-x-3 group">
+                <div class="w-12 h-12 bg-neutral-900 border border-neutral-700 rounded-lg flex items-center justify-center p-1 shadow-md">
+                    <span class="text-romeroRed font-black text-xl tracking-tighter">TAR</span>
+                </div>
+                <div>
+                    <span class="block font-black text-lg sm:text-xl tracking-wider text-white uppercase group-hover:text-romeroRed transition-colors">Tracto Accesorios</span>
+                    <span class="block text-xs font-semibold tracking-widest text-romeroRed uppercase">Romero</span>
+                </div>
+            </a>
+
+            <!-- NAVEGACIÓN ESCRITORIO -->
+            <nav class="hidden md:flex items-center space-x-8 font-semibold text-sm tracking-wide">
+                <a href="#inicio" class="text-white hover:text-romeroRed transition-colors">Inicio</a>
+                <a href="#nosotros" class="text-neutral-300 hover:text-romeroRed transition-colors">Nosotros</a>
+                <a href="#productos" class="text-neutral-300 hover:text-romeroRed transition-colors">Productos</a>
+                <a href="#sucursales" class="text-neutral-300 hover:text-romeroRed transition-colors">Sucursales</a>
+                <a href="#contacto" class="text-neutral-300 hover:text-romeroRed transition-colors">Contacto</a>
+            </nav>
+
+            <!-- ACCIONES / REDES -->
+            <div class="hidden lg:flex items-center space-x-4">
+                <a href="https://www.facebook.com/Tractoaccesorios.Romero/" target="_blank" class="w-10 h-10 rounded-full bg-neutral-900 border border-neutral-800 flex items-center justify-center text-neutral-300 hover:text-white hover:bg-romeroRed hover:border-romeroRed transition-all">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/tractoaccesoriosromero/" target="_blank" class="w-10 h-10 rounded-full bg-neutral-900 border border-neutral-800 flex items-center justify-center text-neutral-300 hover:text-white hover:bg-romeroRed hover:border-romeroRed transition-all">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#sucursales" class="bg-romeroRed hover:bg-red-700 text-white font-bold px-5 py-2.5 rounded-md text-sm transition-all shadow-lg shadow-red-600/20">
+                    Cotizar Ahora
+                </a>
+            </div>
+
+            <!-- BOTÓN MENÚ MÓVIL -->
+            <button id="menu-btn" class="md:hidden text-neutral-300 hover:text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- MENÚ MÓVIL DESPLEGABLE -->
+        <div id="mobile-menu" class="hidden md:hidden bg-neutral-900 border-b border-neutral-800 px-6 py-6 space-y-4">
+            <a href="#inicio" class="block text-white font-semibold hover:text-romeroRed">Inicio</a>
+            <a href="#nosotros" class="block text-neutral-300 font-semibold hover:text-romeroRed">Nosotros</a>
+            <a href="#productos" class="block text-neutral-300 font-semibold hover:text-romeroRed">Productos</a>
+            <a href="#sucursales" class="block text-neutral-300 font-semibold hover:text-romeroRed">Sucursales</a>
+            <a href="#contacto" class="block text-neutral-300 font-semibold hover:text-romeroRed">Contacto</a>
+        </div>
+    </header>
+
+    <!-- ========================================== -->
+    <!-- 2. SECCIÓN HERO (PRINCIPAL) -->
+    <!-- ========================================== -->
+    <section id="inicio" class="hero-bg pt-32 pb-24 md:pt-44 md:pb-36 border-b border-neutral-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+                
+                <!-- TEXTO PRINCIPAL -->
+                <div class="md:col-span-7 space-y-6">
+                    <div class="inline-flex items-center space-x-2 bg-neutral-900 border border-neutral-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest text-romeroRed">
+                        <i class="fas fa-shield-alt"></i> <span>Calidad y Resistencia Garantizada</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white uppercase tracking-tight leading-none">
+                        Potencia y Estilo para tu <span class="text-romeroRed underline decoration-neutral-700">Tractocamión</span>
+                    </h1>
+                    <p class="text-neutral-400 text-lg max-w-2xl font-normal leading-relaxed">
+                        Tienda mexicana dedicada a la venta de accesorios y refacciones para tractocamiones y camiones, mejorando la estética y seguridad en carretera.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 pt-4">
+                        <a href="#productos" class="w-full sm:w-auto bg-romeroRed hover:bg-red-700 text-white font-bold px-8 py-4 rounded-md text-center uppercase tracking-wider text-sm transition-all shadow-xl shadow-red-600/30">
+                            Ver Catálogo de Productos
+                        </a>
+                        <a href="#sucursales" class="w-full sm:w-auto bg-neutral-900 hover:bg-neutral-800 text-white border border-neutral-700 font-bold px-8 py-4 rounded-md text-center uppercase tracking-wider text-sm transition-all">
+                            Nuestras Sucursales
+                        </a>
+                    </div>
+                </div>
+
+                <!-- TARJETA DE ESTADÍSTICAS -->
+                <div class="md:col-span-5">
+                    <div class="metal-gradient p-8 rounded-2xl shadow-2xl space-y-6 border border-neutral-800 relative overflow-hidden">
+                        <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-romeroRed/10 rounded-full blur-2xl"></div>
+                        <h3 class="text-xl font-extrabold text-white uppercase tracking-wide border-b border-neutral-800 pb-4 flex items-center justify-between">
+                            <span>Trayectoria Sólida</span>
+                            <i class="fas fa-truck text-romeroRed"></i>
+                        </h3>
+                        <div class="grid grid-cols-2 gap-6 pt-2">
+                            <div>
+                                <span class="block text-3xl sm:text-4xl font-black text-white">+5,000</span>
+                                <span class="text-xs uppercase tracking-wider text-neutral-400 font-semibold">Clientes Registrados</span>
+                            </div>
+                            <div>
+                                <span class="block text-3xl sm:text-4xl font-black text-romeroRed">3</span>
+                                <span class="text-xs uppercase tracking-wider text-neutral-400 font-semibold">Sucursales en Edomex</span>
+                            </div>
+                            <div>
+                                <span class="block text-3xl sm:text-4xl font-black text-white">+10</span>
+                                <span class="text-xs uppercase tracking-wider text-neutral-400 font-semibold">Empleos Formales</span>
+                            </div>
+                            <div>
+                                <span class="block text-3xl sm:text-4xl font-black text-romeroRed">100%</span>
+                                <span class="text-xs uppercase tracking-wider text-neutral-400 font-semibold">Especializados</span>
+                            </div>
+                        </div>
+                        <div class="pt-2">
+                            <span class="inline-block text-xs text-neutral-400 bg-neutral-900 px-3 py-1.5 rounded border border-neutral-800">
+                                <i class="fas fa-map-marker-alt text-romeroRed mr-1"></i> Sede Original: Ecatepec de Morelos
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 3. SECCIÓN SOBRE NOSOTROS -->
+    <!-- ========================================== -->
+    <section id="nosotros" class="py-24 bg-neutral-950 border-b border-neutral-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <h2 class="text-xs uppercase tracking-widest text-romeroRed font-extrabold">Quiénes Somos</h2>
+                <h3 class="text-3xl sm:text-4xl font-black text-white uppercase tracking-tight">Pasión y Experiencia en el Camino</h3>
+                <p class="text-neutral-400 text-base">
+                    Tracto Accesorios "Romero" es una empresa mexicana ubicada en el Estado de México, dedicada a ofrecer soluciones de máxima durabilidad y estilo para camiones de carga pesada.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Tarjeta 1 -->
+                <div class="bg-romeroCard border border-neutral-800 p-8 rounded-xl hover:border-romeroRed/50 transition-all group">
+                    <div class="w-14 h-14 bg-neutral-900 rounded-lg flex items-center justify-center text-romeroRed text-2xl mb-6 group-hover:bg-romeroRed group-hover:text-white transition-all">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Fabricantes Líderes</h4>
+                    <p class="text-neutral-400 text-sm leading-relaxed">
+                        Trabajamos de la mano con los principales fabricantes del sector pesado para garantizar resistencia y calidad superior.
+                    </p>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="bg-romeroCard border border-neutral-800 p-8 rounded-xl hover:border-romeroRed/50 transition-all group">
+                    <div class="w-14 h-14 bg-neutral-900 rounded-lg flex items-center justify-center text-romeroRed text-2xl mb-6 group-hover:bg-romeroRed group-hover:text-white transition-all">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Seguridad y Estética</h4>
+                    <p class="text-neutral-400 text-sm leading-relaxed">
+                        Buscamos mejorar de manera integral la seguridad en carretera y la presencia visual imponente de los tractocamiones.
+                    </p>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="bg-romeroCard border border-neutral-800 p-8 rounded-xl hover:border-romeroRed/50 transition-all group">
+                    <div class="w-14 h-14 bg-neutral-900 rounded-lg flex items-center justify-center text-romeroRed text-2xl mb-6 group-hover:bg-romeroRed group-hover:text-white transition-all">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Confianza Comprobada</h4>
+                    <p class="text-neutral-400 text-sm leading-relaxed">
+                        Una sólida base de más de 5,000 clientes avala nuestro compromiso, atención y servicio en nuestras sucursales.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 4. SECCIÓN PRODUCTOS Y SERVICIOS -->
+    <!-- ========================================== -->
+    <section id="productos" class="py-24 bg-romeroDark border-b border-neutral-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+                <div class="space-y-4">
+                    <h2 class="text-xs uppercase tracking-widest text-romeroRed font-extrabold">Catálogo Especializado</h2>
+                    <h3 class="text-3xl sm:text-4xl font-black text-white uppercase tracking-tight">Accesorios y Refacciones</h3>
+                </div>
+                <p class="text-neutral-400 text-sm max-w-md mt-4 md:mt-0">
+                    Equipamiento integral para renovar, blindar y personalizar unidades de carga pesada.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Producto 1 -->
+                <div class="bg-romeroCard border border-neutral-800 rounded-xl overflow-hidden group hover:border-neutral-600 transition-all">
+                    <div class="h-48 bg-neutral-900 flex items-center justify-center relative overflow-hidden">
+                        <i class="fas fa-gem text-5xl text-neutral-700 group-hover:text-romeroRed transition-colors"></i>
+                        <span class="absolute top-3 left-3 bg-neutral-900/90 text-xs font-bold text-white px-2.5 py-1 rounded border border-neutral-700 uppercase tracking-wider">Cromados</span>
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <h4 class="text-lg font-bold text-white">Cromos y Plafonería</h4>
+                        <p class="text-neutral-400 text-xs leading-relaxed">Plafones LED avanzados, molduras y accesorios cromados de gran durabilidad.</p>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="bg-romeroCard border border-neutral-800 rounded-xl overflow-hidden group hover:border-neutral-600 transition-all">
+                    <div class="h-48 bg-neutral-900 flex items-center justify-center relative overflow-hidden">
+                        <i class="fas fa-gas-pump text-5xl text-neutral-700 group-hover:text-romeroRed transition-colors"></i>
+                        <span class="absolute top-3 left-3 bg-neutral-900/90 text-xs font-bold text-white px-2.5 py-1 rounded border border-neutral-700 uppercase tracking-wider">Estructura</span>
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <h4 class="text-lg font-bold text-white">Tanques y Defensas</h4>
+                        <p class="text-neutral-400 text-xs leading-relaxed">Tanques de combustible reforzados y defensas robustas para máxima protección frontal.</p>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="bg-romeroCard border border-neutral-800 rounded-xl overflow-hidden group hover:border-neutral-600 transition-all">
+                    <div class="h-48 bg-neutral-900 flex items-center justify-center relative overflow-hidden">
+                        <i class="fas fa-lightbulb text-5xl text-neutral-700 group-hover:text-romeroRed transition-colors"></i>
+                        <span class="absolute top-3 left-3 bg-neutral-900/90 text-xs font-bold text-white px-2.5 py-1 rounded border border-neutral-700 uppercase tracking-wider">Iluminación</span>
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <h4 class="text-lg font-bold text-white">Faros y Unidades</h4>
+                        <p class="text-neutral-400 text-xs leading-relaxed">Faros principales y unidades de iluminación de alta potencia para visibilidad nocturna.</p>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="bg-romeroCard border border-neutral-800 rounded-xl overflow-hidden group hover:border-neutral-600 transition-all">
+                    <div class="h-48 bg-neutral-900 flex items-center justify-center relative overflow-hidden">
+                        <i class="fas fa-bullhorn text-5xl text-neutral-700 group-hover:text-romeroRed transition-colors"></i>
+                        <span class="absolute top-3 left-3 bg-neutral-900/90 text-xs font-bold text-white px-2.5 py-1 rounded border border-neutral-700 uppercase tracking-wider">Equipamiento</span>
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <h4 class="text-lg font-bold text-white">Loderas, Tapetes y Cornetas</h4>
+                        <p class="text-neutral-400 text-xs leading-relaxed">Loderas de uso rudo, tapetes protectores, artículos de colisión y cornetas de aire.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 5. SECCIÓN SUCURSALES -->
+    <!-- ========================================== -->
+    <section id="sucursales" class="py-24 bg-neutral-950 border-b border-neutral-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <h2 class="text-xs uppercase tracking-widest text-romeroRed font-extrabold">Ubicaciones Estratégicas</h2>
+                <h3 class="text-3xl sm:text-4xl font-black text-white uppercase tracking-tight">Nuestras 3 Sucursales</h3>
+                <p class="text-neutral-400 text-base">
+                    Operamos tres sucursales en el Estado de México para atenderte de forma personalizada.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <!-- Sucursal 1: Matriz Ecatepec -->
+                <div class="bg-romeroCard border border-neutral-800 p-8 rounded-xl space-y-6 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between border-b border-neutral-800 pb-4">
+                            <h4 class="text-xl font-bold text-white uppercase">Matriz Ecatepec</h4>
+                            <span class="bg-romeroRed/10 text-romeroRed text-xs font-extrabold px-3 py-1 rounded border border-romeroRed/30">MATRIZ</span>
+                        </div>
+                        <p class="text-neutral-300 text-sm flex items-start space-x-3">
+                            <i class="fas fa-map-marker-alt text-romeroRed mt-1 flex-shrink-0"></i>
+                            <span>Av. Vía Morelos 617-A, km 13.5, Col. Ampliación San Pedro Xalostoc, Ecatepec de Morelos, C.P. 55316</span>
+                        </p>
+                        <p class="text-neutral-300 text-sm flex items-center space-x-3">
+                            <i class="fas fa-clock text-romeroRed flex-shrink-0"></i>
+                            <span>Lunes a Viernes 9:00–18:00 (Viernes hasta 17:00)<br>Sábado 10:00–14:00 (Domingo Cerrado)</span>
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-neutral-800">
+                        <a href="https://www.facebook.com/Tractoaccesorios.Romero/" target="_blank" class="block w-full bg-neutral-900 hover:bg-romeroRed text-center text-white font-bold py-3 rounded-md text-sm transition-all border border-neutral-700">
+                            Contactar Matriz
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Sucursal 2: Cuautitlán Izcalli -->
+                <div class="bg-romeroCard border border-neutral-800 p-8 rounded-xl space-y-6 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between border-b border-neutral-800 pb-4">
+                            <h4 class="text-xl font-bold text-white uppercase">Cuautitlán Izcalli</h4>
+                            <span class="bg-neutral-900 text-neutral-300 text-xs font-extrabold px-3 py-1 rounded border border-neutral-700">SUCURSAL</span>
+                        </div>
+                        <p class="text-neutral-300 text-sm flex items-start space-x-3">
+                            <i class="fas fa-map-marker-alt text-romeroRed mt-1 flex-shrink-0"></i>
+                            <span>Av. Cuautitlán - Teoloyucan 1213, Cuautitlán Izcalli, Estado de México</span>
+                        </p>
+                        <p class="text-neutral-300 text-sm flex items-center space-x-3">
+                            <i class="fas fa-phone-alt text-romeroRed flex-shrink-0"></i>
+                            <span class="font-bold text-white">+52 55 6286 4174</span>
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-neutral-800">
+                        <a href="tel:5562864174" class="block w-full bg-romeroRed hover:bg-red-700 text-center text-white font-bold py-3 rounded-md text-sm transition-all shadow-lg shadow-red-600/20">
+                            Llamar a Sucursal
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Sucursal 3: Tlalnepantla -->
+                <div class="bg-romeroCard border border-neutral-800 p-8 rounded-xl space-y-6 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between border-b border-neutral-800 pb-4">
+                            <h4 class="text-xl font-bold text-white uppercase">Tlalnepantla</h4>
+                            <span class="bg-neutral-900 text-neutral-300 text-xs font-extrabold px-3 py-1 rounded border border-neutral-700">SUCURSAL</span>
+                        </div>
+                        <p class="text-neutral-300 text-sm flex items-start space-x-3">
+                            <i class="fas fa-map-marker-alt text-romeroRed mt-1 flex-shrink-0"></i>
+                            <span>Tlalnepantla de Baz, Estado de México</span>
+                        </p>
+                        <p class="text-neutral-300 text-sm flex items-center space-x-3">
+                            <i class="fas fa-info-circle text-romeroRed flex-shrink-0"></i>
+                            <span>Atención especializada y refacciones para camiones.</span>
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-neutral-800">
+                        <a href="https://www.facebook.com/Tractoaccesorios.Romero/" target="_blank" class="block w-full bg-neutral-900 hover:bg-romeroRed text-center text-white font-bold py-3 rounded-md text-sm transition-all border border-neutral-700">
+                            Consultar Vía Facebook
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 6. SECCIÓN CONTACTO Y REDES -->
+    <!-- ========================================== -->
+    <section id="contacto" class="py-24 bg-romeroDark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
+            <div class="max-w-2xl mx-auto space-y-4">
+                <h2 class="text-xs uppercase tracking-widest text-romeroRed font-extrabold">Conéctate con Nosotros</h2>
+                <h3 class="text-3xl sm:text-4xl font-black text-white uppercase tracking-tight">¿Listo para equipar tu camión?</h3>
+                <p class="text-neutral-400 text-sm">
+                    Síguenos en nuestras redes sociales oficiales para conocer novedades, lanzamientos de nuevos kits y promociones exclusivas.
+                </p>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-4 pt-4">
+                <a href="https://www.facebook.com/Tractoaccesorios.Romero/" target="_blank" class="flex items-center space-x-3 bg-neutral-900 hover:bg-blue-600 text-white border border-neutral-800 px-6 py-3.5 rounded-lg font-bold text-sm transition-all">
+                    <i class="fab fa-facebook-f text-lg"></i>
+                    <span>Facebook (+4,8k seguidores)</span>
+                </a>
+                <a href="https://www.instagram.com/tractoaccesoriosromero/" target="_blank" class="flex items-center space-x-3 bg-neutral-900 hover:bg-pink-600 text-white border border-neutral-800 px-6 py-3.5 rounded-lg font-bold text-sm transition-all">
+                    <i class="fab fa-instagram text-lg"></i>
+                    <span>Instagram Oficial</span>
+                </a>
+                <a href="https://tractoromero.odoo.com/" target="_blank" class="flex items-center space-x-3 bg-neutral-900 hover:bg-romeroRed text-white border border-neutral-800 px-6 py-3.5 rounded-lg font-bold text-sm transition-all">
+                    <i class="fas fa-globe text-lg"></i>
+                    <span>Sitio Web Odoo</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 7. FOOTER -->
+    <!-- ========================================== -->
+    <footer class="bg-neutral-950 border-t border-neutral-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between text-neutral-500 text-xs uppercase tracking-wider space-y-4 md:space-y-0">
+            <p>&copy; 2026 Tracto Accesorios Romero. Todos los derechos reservados.</p>
+            <div class="flex space-x-6">
+                <a href="#inicio" class="hover:text-white transition-colors">Términos</a>
+                <a href="#sucursales" class="hover:text-white transition-colors">Privacidad</a>
+                <a href="#contacto" class="hover:text-white transition-colors">Soporte</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================== -->
+    <!-- SCRIPT PARA MENÚ MÓVIL -->
+    <!-- ========================================== -->
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
